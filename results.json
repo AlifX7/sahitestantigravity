@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Badiadka Unit Sahityotsav",
+    "year": "2025",
+    "lastUpdated": "2025-01-01"
+  },
+  "results": [
+    {
+      "level": "HS",
+      "gender": "Boys",
+      "program": "Speech Malayalam",
+      "status": "final",
+      "places": [
+        { "rank": 1, "name": "Ahmad Yaseen", "points": 5 },
+        { "rank": 2, "name": "Muhammed Ramees", "points": 3 },
+        { "rank": 3, "name": "Sayyid Sinan", "points": 1 }
+      ]
+    },
+    {
+      "level": "LP",
+      "gender": "Girls",
+      "program": "Painting Watercolor",
+      "status": "live",
+      "places": []
+    }
+  ]
+}

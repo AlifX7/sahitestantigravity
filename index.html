@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badiadka Unit Sahityotsav 2025 - Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0e0e0e;
+            --panel-bg: #161616;
+            --card-bg: #1e1e1e;
+            --accent: #f5c518;
+            --text-high: rgba(255, 255, 255, 0.95);
+            --text-med: rgba(255, 255, 255, 0.70);
+            --text-low: rgba(255, 255, 255, 0.45);
+            --text-muted: rgba(255, 255, 255, 0.20);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --boys-color: #1d4ed8;
+            --girls-color: #be185d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-high);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2, h3, h4, .serif {
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .nav-logo {
+            height: 44px; /* Scaled a bit */
+        }
+        
+        .ssf-logo {
+            height: 40px;
+            opacity: 0.9;
+        }
+
+        .nav-title {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-title-main {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-high);
+        }
+
+        .nav-title-sub {
+            font-size: 0.8rem;
+            color: var(--text-low);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .live-counter {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--panel-bg);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-med);
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #22c55e;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            padding: 3rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        header p {
+            color: var(--text-low);
+            font-size: 1rem;
+        }
+
+        /* Selector Panel */
+        .selector-panel {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1.5rem;
+            align-items: end;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-low);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        select {
+            appearance: none;
+            background-color: var(--card-bg);
+            color: var(--text-high);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            font-family: inherit;
+            width: 100%;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.2s ease;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(255,255,255,0.45)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.2rem;
+        }
+
+        select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px var(--accent);
+        }
+
+        select:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Gender Toggle */
+        .gender-toggle {
+            display: flex;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 0.25rem;
+            position: relative;
+        }
+
+        .gender-btn {
+            flex: 1;
+            padding: 0.6rem 1.5rem;
+            background: transparent;
+            border: none;
+            color: var(--text-low);
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 50px;
+            position: relative;
+            z-index: 2;
+            transition: color 0.3s ease;
+        }
+
+        .gender-btn.active {
+            color: white;
+        }
+
+        .toggle-pill {
+            position: absolute;
+            top: 0.25rem;
+            bottom: 0.25rem;
+            left: 0.25rem;
+            width: calc(50% - 0.25rem);
+            background-color: var(--boys-color);
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+        }
+
+        .toggle-boys .toggle-pill {
+            transform: translateX(0);
+            background-color: var(--boys-color);
+        }
+
+        .toggle-girls .toggle-pill {
+            transform: translateX(100%);
+            background-color: var(--girls-color);
+        }
+
+        /* Result Display Area */
+        #result-container {
+            min-height: 200px;
+        }
+
+        .result-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: slideUpFade 0.4s ease forwards;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideUpFade {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .result-title {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: rgba(255,255,255,0.05);
+            color: var(--text-med);
+            border: 1px solid var(--border-color);
+        }
+
+        .tag-status.live { color: #f5c518; border-color: rgba(245, 197, 24, 0.3); }
+        .tag-status.final { color: #22c55e; border-color: rgba(34, 197, 94, 0.3); }
+        .tag-status.upcoming { color: var(--text-low); }
+
+        .tag-gender.boys { color: #60a5fa; border-color: rgba(96, 165, 250, 0.3); }
+        .tag-gender.girls { color: #f472b6; border-color: rgba(244, 114, 182, 0.3); }
+
+        .ranks-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .rank-row {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.04);
+            transition: transform 0.2s;
+        }
+        
+        .rank-row:hover {
+            background: rgba(255,255,255,0.04);
+            transform: translateX(4px);
+        }
+
+        .rank-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #000;
+            flex-shrink: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .rank-1 { background: linear-gradient(135deg, #FFD700, #FDB931); }
+        .rank-2 { background: linear-gradient(135deg, #E0E0E0, #BDBDBD); }
+        .rank-3 { background: linear-gradient(135deg, #CD7F32, #A0522D); }
+
+        .participant-info {
+            flex: 1;
+        }
+
+        .participant-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-high);
+            margin-bottom: 0.2rem;
+        }
+
+        .participant-points {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-low);
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: auto;
+            font-size: 0.85rem;
+            color: var(--text-low);
+        }
+
+        footer a {
+            color: var(--text-med);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--accent);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .selector-panel {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .gender-toggle {
+                order: -1;
+                margin-bottom: 0;
+            }
+            .nav-title-main { display: none; }
+            .nav-brand { gap: 0.5rem; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://www.keralasahityotsav.com" class="nav-brand" target="_blank" rel="noopener">
+            <img src="https://www.keralasahityotsav.com/images/ssfkerala.png" alt="SSF Kerala" class="ssf-logo">
+            <img src="https://www.keralasahityotsav.com/images/navbrand.png" alt="Sahityotsav" class="nav-logo">
+            <div class="nav-title">
+                <span class="nav-title-main">Badiadka Unit</span>
+                <span class="nav-title-sub">Sahityotsav 2025</span>
+            </div>
+        </a>
+        <div class="live-counter">
+            <span class="live-dot"></span>
+            <span id="published-count">0 Published</span>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <h1 class="serif">Live Results</h1>
+            <p>Select category, gender, and program to view results</p>
+        </header>
+
+        <div class="selector-panel">
+            <div class="input-group">
+                <label for="category-select">Category</label>
+                <select id="category-select">
+                    <option value="" disabled selected>Choose Category...</option>
+                    <option value="LP">Lower Primary (LP)</option>
+                    <option value="UP">Upper Primary (UP)</option>
+                    <option value="HS">High School (HS)</option>
+                    <option value="HSS">Higher Secondary (HSS)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="gender-toggle toggle-boys" id="gender-toggle">
+                    <div class="toggle-pill"></div>
+                    <button class="gender-btn active" data-gender="Boys">Boys</button>
+                    <button class="gender-btn" data-gender="Girls">Girls</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="program-select">Program</label>
+                <select id="program-select" disabled>
+                    <option value="" disabled selected>Select Category first</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="result-container">
+            <!-- Result card renders here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SSF Badiadka Unit. Powered by <a href="https://www.keralasahityotsav.com" target="_blank">SSF Kerala Sahityotsav</a>.</p>
+    </footer>
+
+    <script>
+        const RESULTS_URL = 'results.json';
+        
+        const PROGRAMS = {
+            LP: {
+                Boys: ["Madhganam", "Speech", "Quiz", "Katha Kathanam", "Pencil Drawing", "Painting Watercolor", "Bhasha Keli", "Reading Malayalam", "Reading Arabic-Malayalam", "Book Test"],
+                Girls: ["Pencil Drawing", "Painting Watercolor", "Handwritten Malayalam", "Journal Art"]
+            },
+            UP: {
+                Boys: ["Mappilapattu", "Katha Kathanam", "Speech", "Ganitha Keli", "Quiz", "Pencil Drawing", "Painting Watercolor", "Story Writing", "Book Test", "Spelling Bee", "Sudoku"],
+                Girls: ["Pencil Drawing", "Painting Watercolor", "Book Test", "Story Writing", "Origami"]
+            },
+            HS: {
+                Boys: ["Speech Malayalam", "Speech English", "Mappilapattu", "Madhganam", "Arabic Poetry Recitation", "Poet Recitation Malayalam", "Poet Recitation Urdu", "Quiz", "Story Writing", "Poetry Writing", "Pencil Drawing", "Painting Watercolor", "Book Test", "Essay Malayalam", "News Reading", "Adikkuripp", "Language Game English"],
+                Girls: ["Embroidery", "Book Test", "Pencil Drawing", "Painting Watercolor", "Story Writing", "Poetry Writing"]
+            },
+            HSS: {
+                Boys: [],
+                Girls: []
+            }
+        };
+
+        const CATEGORY_NAMES = {
+            "LP": "Lower Primary",
+            "UP": "Upper Primary",
+            "HS": "High School",
+            "HSS": "Higher Secondary"
+        };
+
+        let resultData = [];
+        let currentCategory = "";
+        let currentGender = "Boys";
+        let currentProgram = "";
+
+        // DOM Elements
+        const elCategory = document.getElementById('category-select');
+        const elProgram = document.getElementById('program-select');
+        const elGenderToggle = document.getElementById('gender-toggle');
+        const genderBtns = document.querySelectorAll('.gender-btn');
+        const elResultContainer = document.getElementById('result-container');
+        const elPublishedCount = document.getElementById('published-count');
+
+        // Fetch Data
+        async function fetchResults() {
+            try {
+                const response = await fetch(`${RESULTS_URL}?t=${Date.now()}`);
+                if (!response.ok) throw new Error('Data fetch failed');
+                const data = await response.json();
+                resultData = data.results || [];
+                updatePublishedCount();
+                if (currentProgram) renderResult();
+            } catch (error) {
+                console.error("Error fetching results:", error);
+            }
+        }
+
+        function updatePublishedCount() {
+            const count = resultData.filter(r => r.status === 'final').length;
+            elPublishedCount.textContent = `${count} Published`;
+        }
+
+        // UI Logic
+        function updateProgramDropdown() {
+            elProgram.innerHTML = '<option value="" disabled selected>Select Program...</option>';
+            
+            if (!currentCategory) {
+                elProgram.innerHTML = '<option value="" disabled selected>Select Category first</option>';
+                elProgram.disabled = true;
+                return;
+            }
+
+            const programs = PROGRAMS[currentCategory][currentGender] || [];
+            if (programs.length === 0) {
+                elProgram.innerHTML = '<option value="" disabled selected>No programs available</option>';
+                elProgram.disabled = true;
+            } else {
+                programs.forEach(prog => {
+                    const opt = document.createElement('option');
+                    opt.value = prog;
+                    opt.textContent = prog;
+                    elProgram.appendChild(opt);
+                });
+                elProgram.disabled = false;
+            }
+            
+            currentProgram = "";
+            elResultContainer.innerHTML = '';
+        }
+
+        // Event Listeners
+        elCategory.addEventListener('change', (e) => {
+            currentCategory = e.target.value;
+            updateProgramDropdown();
+        });
+
+        genderBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const targetGender = e.target.dataset.gender;
+                if (targetGender === currentGender) return;
+                
+                currentGender = targetGender;
+                
+                genderBtns.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                if (currentGender === 'Boys') {
+                    elGenderToggle.classList.remove('toggle-girls');
+                    elGenderToggle.classList.add('toggle-boys');
+                } else {
+                    elGenderToggle.classList.remove('toggle-boys');
+                    elGenderToggle.classList.add('toggle-girls');
+                }
+
+                updateProgramDropdown();
+            });
+        });
+
+        elProgram.addEventListener('change', (e) => {
+            currentProgram = e.target.value;
+            renderResult();
+        });
+
+        function renderResult() {
+            if (!currentCategory || !currentProgram) return;
+
+            const rData = resultData.find(r => 
+                r.level === currentCategory && 
+                r.gender === currentGender && 
+                r.program === currentProgram
+            );
+
+            const status = rData ? rData.status : 'upcoming';
+            const places = rData ? rData.places : [];
+
+            if (status !== 'final' || !places || places.length === 0) {
+                let statusLabel = status === 'live' ? 'Live Event' : 'Upcoming / Not Published';
+                let statusClass = status === 'live' ? 'live' : 'upcoming';
+                
+                elResultContainer.innerHTML = `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h2 class="result-title serif">${currentProgram}</h2>
+                            <div class="tags">
+                                <span class="tag">${CATEGORY_NAMES[currentCategory] || currentCategory}</span>
+                                <span class="tag tag-gender ${currentGender.toLowerCase()}">${currentGender}</span>
+                                <span class="tag tag-status ${statusClass}">${statusLabel}</span>
+                            </div>
+                        </div>
+                        <div class="empty-state">
+                            Results not published yet
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            const placesHtml = [...places]
+                .sort((a, b) => a.rank - b.rank)
+                .map(place => {
+                    return `
+                        <div class="rank-row">
+                            <div class="rank-circle rank-${place.rank}">${place.rank}</div>
+                            <div class="participant-info">
+                                <div class="participant-name">${place.name}</div>
+                                <div class="participant-points">${place.points} ${place.points === 1 ? 'Point' : 'Points'}</div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+            elResultContainer.innerHTML = `
+                <div class="result-card">
+                    <div class="result-header">
+                        <h2 class="result-title serif">${currentProgram}</h2>
+                        <div class="tags">
+                            <span class="tag">${CATEGORY_NAMES[currentCategory] || currentCategory}</span>
+                            <span class="tag tag-gender ${currentGender.toLowerCase()}">${currentGender}</span>
+                            <span class="tag tag-status final">Final Results</span>
+                        </div>
+                    </div>
+                    <div class="ranks-list">
+                        ${placesHtml}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Init
+        fetchResults();
+        setInterval(fetchResults, 60000); // 60s auto-refresh
+    </script>
+</body>
+</html>
