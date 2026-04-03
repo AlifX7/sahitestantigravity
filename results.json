@@ -6,14 +6,14 @@
   },
   "results": [
     {
-      "level": "HS",
+      "level": "LP",
       "gender": "Boys",
-      "program": "Speech Malayalam",
+      "program": "Madhganam",
       "status": "final",
       "places": [
-        { "rank": 1, "name": "muham,mad shilibili", "points": 5 },
-        { "rank": 2, "name": "Muhammed Ramees", "points": 3 },
-        { "rank": 3, "name": "Sayyid Sinan", "points": 1 }
+        { "rank": 1, "name": "Ahmed Yaseen", "points": 7 },
+        { "rank": 2, "name": "Muhammed Ramees", "points": 5 },
+        { "rank": 3, "name": "Sayyid Sinan", "points": 3 }
       ]
     },
     {
