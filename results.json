@@ -24,4 +24,14 @@
       "places": []
     }
   ]
-}
+}, {
+      "level": "LP",
+      "gender": "Boys",
+      "program": "Speech",
+      "status": "final",
+      "places": [
+        { "rank": 1, "name": "  " , "points":  },
+        { "rank": 2, "name": "", "points":  },
+        { "rank": 3, "name": "", "points":  }
+      ]
+    }
