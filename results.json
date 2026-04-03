@@ -15,24 +15,5 @@
         { "rank": 2, "name": "Muhammed Ramees", "points": 5 },
         { "rank": 3, "name": "Sayyid Sinan", "points": 3 }
       ]
-    },
-    {
-      "level": "LP",
-      "gender": "Girls",
-      "program": "Painting Watercolor",
-      "status": "live",
-      "places": []
     }
-  ]
-},
-{
-      "level": "LP",
-      "gender": "Boys",
-      "program": "Speech",
-      "status": "final",
-      "places": [
-        { "rank": 1, "name": "  " , "points":  },
-        { "rank": 2, "name": "", "points":  },
-        { "rank": 3, "name": "", "points":  }
-      ]
-    }
+    
