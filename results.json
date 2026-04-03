@@ -1,19 +1,41 @@
-{
-  "meta": {
-    "title": "Badiadka Unit Sahityotsav",
-    "year": "2025",
-    "lastUpdated": "2025-01-01"
-  },
+
+    {
+  "meta": { "title": "Badiadka Unit Sahityotsav 2025", "year": "2025", "lastUpdated": "2025-01-01" },
   "results": [
     {
-      "level": "LP",
+      "level": "Lower Primary",
       "gender": "Boys",
       "program": "Madhganam",
       "status": "final",
       "places": [
-        { "rank": 1, "name": "Ahmed Yaseen", "points": 7 },
-        { "rank": 2, "name": "Muhammed Ramees", "points": 5 },
-        { "rank": 3, "name": "Sayyid Sinan", "points": 3 }
+        { "rank": 1, "name": "Ahmad Abdullah", "points": 5 },
+        { "rank": 2, "name": "Mohammed Ali", "points": 3 },
+        { "rank": 3, "name": "Fadil Hassan", "points": 1 }
       ]
+    },
+    {
+      "level": "Lower Primary",
+      "gender": "Girls",
+      "program": "Pencil Drawing",
+      "status": "final",
+      "places": [
+        { "rank": 1, "name": "Fathima Suhra", "points": 5 },
+        { "rank": 2, "name": "Aisha Zoya", "points": 3 }
+      ]
+    },
+    {
+      "level": "High School",
+      "gender": "Boys",
+      "program": "Speech English",
+      "status": "live",
+      "places": []
+    },
+    {
+      "level": "High School",
+      "gender": "Boys",
+      "program": "Mappilapattu",
+      "status": "upcoming",
+      "places": []
     }
-    
+  ]
+}
